@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <h1>Login</h1>
+        <div class="form">
+        <!-- FORM -->
+            <form action="/loginsubmit" method="post">
+                <div class="txt">
+                    <input type="text" placeholder="first name"  name="firstname" required>
+                    <span></span>
+                </div>
+                <div class="txt">
+                    <input type="text" name="secondname" placeholder="last name" required>
+                    <span></span>
+                </div>
+                <div class="txt">
+                    <input type="password" name="pass" placeholder="password" required>
+                    <span></span>
+                </div>
+                <div class="txt">
+                    <input type="email" name="email" placeholder="abc@email.com" required>
+                    <span></span>
+                </div>
+                <div class="pass">Forgot Password?</div>
+                <input type="submit" value="Login">
+                <div class="signup_link">
+                 <button type="submit">Not a membar? <a href="#">Signup</a></button>   
+                </div>
+            </form>
+            <!-- <form action="/loginsubmit" method="post">
+                <!-- <label for="fname">name</label> -->
+                <input type="text"  name="firstname">
+                <button type="submit">submit</button>
+            </form> -->
+        </div>
+    </div>
+</body>
+</html>
