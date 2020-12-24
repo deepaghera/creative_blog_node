@@ -7,7 +7,7 @@ app.use(express.static("public"));
 app.use(express.urlencoded({extended : true}));
 
 app.get('/',function (req,res)  {
-    console.log(__dirname);
+    // console.log(__dirname);
     res.sendFile(path.join(__dirname + "/public/frontpage.html"));
    // res.send("done");
 })
