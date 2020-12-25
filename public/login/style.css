@@ -53,7 +53,14 @@ label{
   margin: 25px auto 0;
   text-align: center;
 }
-
+.p_err {
+  visibility: hidden;
+  color: red;
+  display: block;
+  width: 260px;
+  margin: 25px auto 0;
+  text-align: center;
+}
 label span{
   font-size: 14px;
   font-weight: 600;

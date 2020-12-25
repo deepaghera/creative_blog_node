@@ -10,9 +10,9 @@
 <body>
   <div class="cont">
     <div class="form sign-in">
-      <h2>Sign In</h2>
+      <h2>Login</h2>
       <label>
-        <form action="/loginsubmit" method="post">
+        <form action="/login_post" method="post">
             <span>Email Address</span>
              <input type="email" name="email">
             </label>
@@ -20,7 +20,7 @@
             <span>Password</span>
             <input type="password" name="password">
            </label>
-           <button type="submit" class="submit" type="button">Sign In</button>
+           <button type="submit" class="submit" type="button">Login</button>
     </form>
       <p class="forgot-pass">Forgot Password ?</p>
 
@@ -31,36 +31,39 @@
       <div class="img">
         <div class="img-text m-up">
           <h2>New here?</h2>
-          <p>Sign up and discover great amount of new opportunities!</p>
+          <p>Register and discover great amount of new opportunities!</p>
         </div>
         <div class="img-text m-in">
           <h2>One of us?</h2>
-          <p>If you already has an account, just sign in. We've missed you!</p>
+          <p>If you already has an account, just Login. We've missed you!</p>
         </div>
         <div class="img-btn">
-          <span class="m-up">Sign Up</span>
-          <span class="m-in">Sign In</span>
+          <span class="m-up">Register </span>
+          <span class="m-in">Login</span>
         </div>
       </div>
       <div class="form sign-up">
-        <h2>Sign Up</h2>
+        <form action="/register_post" method="post">
+        <h2>Register</h2>
         <label>
           <span>Name</span>
-          <input type="text">
+          <input name="register_name" type="text">
         </label>
         <label>
           <span>Email</span>
-          <input type="email">
+          <input name="register_email" type="email">
         </label>
         <label>
           <span>Password</span>
-          <input type="password">
+          <input name="register_pass" id="r_pass" type="password">
         </label>
         <label>
           <span>Confirm Password</span>
-          <input type="password">
+          <input name="register_confirm_pass" id="r_cpass" type="password">
         </label>
-        <button type="button" class="submit">Sign Up Now</button>
+        <span class="p_err">Password Not matched</span>
+        <button type="submit" id="r_btn" class="submit">Register Now</button>
+      </form>
       </div>
     </div>
   </div>
